@@ -281,6 +281,8 @@ color:rgb(0, 132, 255);
     left: 50%;
     border-radius: 4px;
     transform: translate(-50%, -50%);
+    padding-left: 39px;
+    padding-right: 41px;
   }
   
   .modal-btn{
@@ -308,6 +310,14 @@ color:rgb(0, 132, 255);
 position: absolute;
 top: 29px;
 left: 12px;
+transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-icon1{
+position: absolute;
+top: 4px;
+left: 4px;
+fill: var(--maim-blu-color);
+opacity: 0;
 transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-link{
@@ -359,6 +369,10 @@ border-width: 1px;
 border-radius: 4px;
 border-style: solid;
 border-color: rgba(33, 33, 33, 0.2);
+}
+.form-modal-input:hover, .comment-textarea:hover, .form-btn:hover, .form-icon1:hover, .close-btn:hover,
+.form-modal-input:focus,.comment-textarea:focus,.form-btn:focus, .form-icon1:focus, .close-btn:focus{
+  border-color: rgb(0, 132, 255);
 }
 .form-btn{
 width: 200px;
@@ -846,6 +860,7 @@ fill: currentColor;
   }
   .footer-social{
     box-sizing: border-box;
+    margin-right: 93px;
   }
   .foot-text{
  margin-bottom: 20px;
@@ -861,12 +876,15 @@ fill: currentColor;
       flex-wrap: wrap;
       max-width: 570px;
   }
+  .form-label{
+    margin-bottom: 20px;
+  }
   .footer-list{
   display: flex;
   margin: 0 auto;
   justify-content: center;
   align-items: center;
-  margin-right: 93px;
+  
   }
   .footer-item{
     margin-right: 10px;
@@ -917,7 +935,6 @@ fill: currentColor;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     cursor: pointer;
-    margin-top: 20px;
     padding: 15px 16px;
     margin-right: 12px;
   }

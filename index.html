@@ -79,10 +79,10 @@
                          <use href="./images/sprite(2).svg#icon-Vector-3"></use>
                          </svg>
                         </label>
-                      <label class="form-group" for="mail">
+                      <label class="form-group" for="email">
                          Почта
-                         <input class="form-modal-input" type="mail" id="mail">
-                            <svg class="fore-icon mail" width="12" height="12">
+                         <input class="form-modal-input" type="email" id="email">
+                            <svg class="form-icon email" width="12" height="12">
                             <use href="./images/sprite(2).svg#icon-Vector-4"></use>
                             </svg>
                         </label>
@@ -93,8 +93,12 @@
                      </label>
                    <label class="form-group" for="chek">
                      Соглашаюсь с рассылкой и принимаю
-                    <a class="form-link" href="#">Условия договора</a>
+                    <a class="form-link" href="#">Условия договора
                     <input class="form-modal-input" type="checkbox" id="chek">
+                  <svg class="form-icon1 chek" width="16" height="15">
+                     <use href="./images/sprite(2).svg#icon-Vector-5"></use>
+                  </svg>
+                  </a>
                    </label>
                    <button class="form-btn" type="submit">Отправить</button>
                </form>
@@ -427,13 +431,16 @@
           </ul>
        </div>
        <div class="footer-subscription">
-          <label class="contact-form" for="">
+         <form class="contact-form" name="contact-form" autocomplete="on">
           <span class="form-label">Подпишитесь на рассылку</span>
-          <input class="ft" type="email" name="" id="" placeholder="E-mail ">
-         </label>
-          <button class="footer-sub" type="submit">Подписаться<svg class="sub-icon" width="24" height="24">
+          <input class="ft" type="email" name="" id="" placeholder="E-mail" required="">
+          <button class="footer-sub" type="submit">
+             Подписаться
+             <svg class="sub-icon" width="24" height="24">
             <use href="./images/sprite(2).svg#icon-send"></use>
-         </svg></button>
+          </svg>
+          </button>
+         </form>
        </div>
     </div>
    </footer>
